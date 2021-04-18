@@ -13,7 +13,7 @@ class QuestionModel(object):
         self.delai=delai
 
 
-class ToDo(Resource):
+class Question(Resource):
     @marshal_with(resource_fields)
     def get (self, **kwargs):
         return QuestionModel(questionId='question_a_repondre', question='Question par defaut')
